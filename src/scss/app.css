@@ -1,0 +1,831 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html, body, .swiper-container, .swiper-slide, img {
+  width: 100%;
+  height: 100%; }
+
+ul, li {
+  list-style: none; }
+
+.swiper-container {
+  margin: 0 auto;
+  max-width: 640px; }
+
+.swiper-slide {
+  background-size: cover; }
+
+.swiper-slide:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 24px;
+  height: 18px;
+  bottom: 20px;
+  background: url("../images/angle.png") no-repeat;
+  background-size: contain;
+  animation: showUpDown 1s linear infinite; }
+
+@keyframes showUpDown {
+  from {
+    bottom: 20px;
+    opacity: 1; }
+  to {
+    bottom: 35px;
+    opacity: 0; } }
+.music {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: .5rem;
+  top: .5rem;
+  z-index: 1; }
+
+.music.stopped .control {
+  background: 0 0; }
+
+.music .control {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url(../images/music.gif) transparent no-repeat center center;
+  background-size: contain; }
+
+.music.stopped .control .control-after {
+  -webkit-animation: none;
+  animation: none; }
+
+.music .control .control-after {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -.75rem;
+  margin-left: -.75rem;
+  background: url(../images/music_off.png) transparent no-repeat center center;
+  background-size: 100% 100%;
+  -webkit-animation: rotate2d 1.2s linear infinite;
+  animation: rotate2d 1.2s linear infinite;
+  z-index: -1; }
+
+@keyframes rotate2d {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+.swiper-pagination-bullet {
+  background-color: #f9f9f9; }
+
+.swiper-pagination-bullet-active {
+  background-color: transparent;
+  border: 1px solid #fff;
+  box-sizing: border-box; }
+
+.ani {
+  position: absolute; }
+
+.box1 {
+  background: url("../images/bg1.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #fff; }
+
+.cmp1 img, .cmp2 img, .cmp3 img, .cmp4 img, .cmp5 img, .cmp6 img, .cmp7 img, .cmp8 img, .cmp9 img, .cmp10 img, .cmp11 img, .cmp12 img, .cmp13 img, .cmp14 img, .cmp15 img, .cmp16 img, .cmp17 img, .cmp18 img, .cmp19 img, .cmp20 img, .cmp21 img, .cmp22 img, .cmp23 img, .cmp24 img, .cmp25 img, .cmp26 img, .cmp27 img, .cmp28 img, .cmp29 img, .cmp30 img, .cmp31 img, .cmp32 img, .cmp33 img, .cmp34 img, .cmp35 img, .cmp36 img, .cmp37 img, .cmp38 img, .cmp39 img, .cmp40 img, .cmp41 img, .cmp42 img, .cmp43 img, .cmp44 img, .cmp45 img, .cmp46 img, .cmp47 img, .cmp48 img, .cmp49 img, .cmp50 img, .cmp51 img, .cmp52 img, .cmp53 img, .cmp54 img, .cmp55 img, .cmp56 img, .cmp57 img, .cmp58 img, .cmp59 img, .cmp60 img, .cmp61 img, .cmp62 img, .cmp63 img, .cmp64 img, .cmp65 img, .cmp66 img, .cmp67 img, .cmp68 img, .cmp69 img, .cmp70 img, .cmp71 img, .cmp72 img, .cmp73 img, .cmp74 img, .cmp75 img, .cmp76 img, .cmp77 img, .cmp78 img, .cmp79 img, .cmp80 img, .cmp81 img, .cmp82 img, .cmp83 img, .cmp84 img, .cmp85 img, .cmp86 img, .cmp87 img, .cmp89 img {
+  color: black;
+  border-width: 0px;
+  border-style: solid;
+  border-color: transparent;
+  font-size: 1rem;
+  opacity: 1;
+  position: absolute; }
+
+.cmp1 {
+  width: 69%;
+  height: 40%;
+  left: 29%;
+  top: 3%;
+  z-index: 0;
+  animation: cir 20s 1s infinite both; }
+
+@keyframes cir {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+.cmp2 {
+  width: 103%;
+  height: 100%;
+  left: -1%;
+  top: 2%;
+  z-index: 0; }
+
+.cmp3 {
+  width: 21%;
+  height: 9%;
+  left: 1%;
+  top: 84%;
+  z-index: 0; }
+
+.cmp4 {
+  width: 1%;
+  height: 17%;
+  left: 35%;
+  top: 6%;
+  z-index: 0; }
+
+.cmp5 {
+  width: 19.7%;
+  height: 12.3%;
+  left: 26.25%;
+  top: 18.9%;
+  z-index: 0; }
+
+.cmp6 {
+  width: 23.5%;
+  height: 35.3%;
+  left: 51.2%;
+  top: 3%;
+  z-index: 0; }
+
+.cmp7 {
+  width: 14.3%;
+  height: 9.3%;
+  left: 40.6%;
+  top: 36%;
+  z-index: 0; }
+
+.cmp8 {
+  width: 0.9%;
+  height: 26.8%;
+  left: 46.9%;
+  top: 12.3%;
+  z-index: 0; }
+
+.cmp9 {
+  width: 12.5%;
+  height: 7.8%;
+  left: 55%;
+  top: 37.3%;
+  z-index: 0; }
+
+.cmp10 {
+  width: 82.2%;
+  height: 11.3%;
+  left: 9.7%;
+  top: 60.9%;
+  z-index: 0; }
+
+.cmp11 {
+  width: 49.7%;
+  height: 7.3%;
+  left: 25.9%;
+  top: 71.6%;
+  z-index: 0; }
+
+.cmp12 {
+  width: 104.7%;
+  height: 101.2%;
+  left: 110.9%;
+  top: 26.4%;
+  z-index: 0; }
+
+.cmp13 {
+  width: 18.75%;
+  height: 8.9%;
+  left: 22.8%;
+  top: 84.2%;
+  z-index: 0; }
+
+.cmp14 {
+  width: 19.1%;
+  height: 10.2%;
+  left: 41.9%;
+  top: 83.4%;
+  z-index: 0; }
+
+.cmp15 {
+  width: 19.1%;
+  height: 10.5%;
+  left: 61.3%;
+  top: 82.7%;
+  z-index: 0; }
+
+.cmp16 {
+  width: 21.9%;
+  height: 9.6%;
+  left: 78.1%;
+  top: 83.9%;
+  z-index: 0; }
+
+.cmp17 {
+  width: 26.25%;
+  height: 13.7%;
+  left: -0.625%;
+  top: 81.8%;
+  z-index: 0;
+  animation: fadeIn 2s 5.7s infinite both; }
+
+.cmp18 {
+  width: 25.6%;
+  height: 13.5%;
+  left: 18.125%;
+  top: 82%;
+  z-index: 0;
+  animation: fadeIn 2s 6.5s infinite both; }
+
+.cmp19 {
+  width: 19.7%;
+  height: 10%;
+  left: 41.25%;
+  top: 83.9%;
+  z-index: 0;
+  animation: fadeIn 2s 7.5s infinite both; }
+
+.cmp20 {
+  width: 19.7%;
+  height: 11.2%;
+  left: 60.3%;
+  top: 82.3%;
+  z-index: 0;
+  animation: fadeIn 2s 6.5s infinite both; }
+
+.cmp21 {
+  width: 28.7%;
+  height: 14.4%;
+  left: 74.3%;
+  top: 81.5%;
+  z-index: 0;
+  animation: fadeIn 2s 7.5s infinite both; }
+
+.box2 {
+  background: url("../images/bg2.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #fff; }
+
+.cmp22 {
+  width: 61.628125%;
+  height: 44.642857142857146%;
+  left: 19.0625%;
+  top: 17.949280753968253%;
+  z-index: 0; }
+
+.cmp23 {
+  width: 100.62500000000001%;
+  height: 35.91269841269841%;
+  left: -0.3125%;
+  top: 2.2757936507936503%;
+  z-index: 0;
+  animation: float 4s 2s 1 both; }
+
+@keyframes float {
+  0% {
+    transform: translateY(30px); }
+  50% {
+    transform: translateY(-40px); }
+  80% {
+    transform: translateY(10px); }
+  100% {
+    transform: translateY(0px); } }
+.cmp24 {
+  width: 15%;
+  height: 8%;
+  left: 50%;
+  top: 28%;
+  z-index: 0; }
+
+.cmp25 {
+  width: 59.06249999999999%;
+  height: 5.390873015873017%;
+  left: 22.5%;
+  top: 68.65079365079364%;
+  z-index: 0; }
+
+.cmp26 {
+  width: 59.06249999999999%;
+  height: 5.390873015873017%;
+  left: 22.1875%;
+  top: 78.57142857142857%;
+  z-index: 0; }
+
+.cmp27 {
+  width: 59.06249999999999%;
+  height: 4.761904761904762%;
+  left: 23.4375%;
+  top: 73.4126984126984%;
+  z-index: 0; }
+
+.cmp28 {
+  width: 59.06249999999999%;
+  height: 4.761904761904762%;
+  left: 22.1875%;
+  top: 81.94444444444444%;
+  z-index: 0; }
+
+.box3 {
+  background-color: black; }
+
+.cmp29 {
+  width: 68.7875%;
+  height: 70.43650793650794%;
+  left: 16.5625%;
+  top: 27.18253968253968%;
+  z-index: 0; }
+
+.cmp30 {
+  width: 40.9375%;
+  height: 21.428571428571427%;
+  left: 30.312499999999996%;
+  top: 68.31944444444446%;
+  z-index: 0;
+  animation: flash 7s 1.5s infinite both; }
+
+.cmp31 {
+  width: 71.225%;
+  height: 59.92063492063492%;
+  left: 14.6875%;
+  top: 36.35912698412698%;
+  z-index: 0; }
+
+.cmp32 {
+  width: 23%;
+  height: 6%;
+  left: 41.875%;
+  top: 35.1686507936508%;
+  z-index: 0; }
+
+.cmp33 {
+  width: 38.75%;
+  height: 4.492063492063492%;
+  left: 3.4375000000000004%;
+  top: 5.567460317460318%;
+  z-index: 0; }
+
+.cmp34 {
+  width: 81.25%;
+  height: 4.64484126984127%;
+  left: 15.312500000000002%;
+  top: 14.484126984126986%;
+  z-index: 0; }
+
+.cmp35 {
+  width: 61.875%;
+  height: 3.571428571428571%;
+  left: 0%;
+  top: 8.34325396825397%;
+  z-index: 0; }
+
+.cmp36 {
+  width: 88.4375%;
+  height: 3.571428571428571%;
+  left: 9.0625%;
+  top: 17.073412698412703%;
+  z-index: 0; }
+
+.box4 {
+  background: url("../images/bg4.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #fff; }
+
+.cmp37 {
+  width: 74.0625%;
+  height: 14.484126984126986%;
+  left: 13.750000000000002%;
+  top: 54.589285714285715%;
+  z-index: 0; }
+
+.cmp38 {
+  width: 76.5%;
+  height: 42.65079365079365%;
+  left: 16.875%;
+  top: 13.12301587301587%;
+  z-index: 0;
+  animation: rotate2d 20s 0.5s infinite both; }
+
+.cmp39 {
+  width: 56.50000000000001%;
+  height: 70.43650793650794%;
+  left: 15.312500000000002%;
+  top: 11.335317460317459%;
+  z-index: 0; }
+
+.cmp40 {
+  width: 14.6875%;
+  height: 3.996031746031746%;
+  left: 58.75%;
+  top: 14.920634920634917%;
+  z-index: 0;
+  animation: fadeIn 2s 3.5s infinite both; }
+
+.cmp41 {
+  width: 13.125%;
+  height: 3.5317460317460316%;
+  left: 2.809375000000003%;
+  top: 33.3015873015873%;
+  z-index: 0;
+  animation: fadeIn 3s 1.5s infinite both; }
+
+.cmp42 {
+  width: 35.625%;
+  height: 9.613095238095239%;
+  left: 65.3125%;
+  top: 27.70436507936508%;
+  z-index: 0;
+  animation: fadeIn 5s 2.5s infinite both; }
+
+.cmp43 {
+  width: 26.25%;
+  height: 7.091269841269841%;
+  left: 16.875%;
+  top: 46.05902777777778%;
+  z-index: 0;
+  animation: fadeIn 3s 2s infinite both; }
+
+.cmp44 {
+  width: 66.875%;
+  height: 4.652777777777778%;
+  left: 17.1875%;
+  top: 84.5734126984127%;
+  z-index: 0; }
+
+.cmp45 {
+  width: 72.1875%;
+  height: 4.476190476190476%;
+  left: 15.937499999999998%;
+  top: 77.86507936507937%;
+  z-index: 0; }
+
+.cmp46 {
+  width: 71.25%;
+  height: 3.1746031746031744%;
+  left: 16.25%;
+  top: 81.20039682539682%;
+  z-index: 0; }
+
+.cmp47 {
+  width: 71.25%;
+  height: 3.1746031746031744%;
+  left: 15.312500000000002%;
+  top: 86.55753968253968%;
+  z-index: 0; }
+
+.box5 {
+  background-color: black; }
+
+.cmp48 {
+  width: 72.5%;
+  height: 23.386904761904763%;
+  left: 13.4375%;
+  top: 32.367063492063494%;
+  z-index: 0; }
+
+.cmp49 {
+  width: 11.8875%;
+  height: 9.126984126984127%;
+  left: 39.88321685791014%;
+  top: 58.35912698412699%;
+  z-index: 0; }
+
+.cmp50 {
+  width: 16.25%;
+  height: 3.869047619047619%;
+  left: 29.063762664794908%;
+  top: 25.135287088061137%;
+  z-index: 0; }
+
+.cmp51 {
+  width: 16.5625%;
+  height: 4.0317460317460325%;
+  left: 20.12990341186523%;
+  top: 14.220257955884176%;
+  z-index: 0; }
+
+.cmp52 {
+  width: 11.25%;
+  height: 3.571428571428571%;
+  left: 59.063867187499994%;
+  top: 7.089533730158734%;
+  z-index: 0; }
+
+.cmp53 {
+  width: 17.1875%;
+  height: 5.3690476190476195%;
+  left: 59.06249999999999%;
+  top: 32.370039682539684%;
+  z-index: 0; }
+
+.cmp54 {
+  width: 18.125%;
+  height: 5.115079365079366%;
+  left: 41.26080017089844%;
+  top: 37.01988171774243%;
+  z-index: 0; }
+
+.cmp55 {
+  width: 10.834375%;
+  height: 14.285714285714285%;
+  left: 82.5%;
+  top: 17.883432539682538%;
+  z-index: 0; }
+
+.cmp56 {
+  width: 19.375%;
+  height: 2.875%;
+  left: 62.81250000000001%;
+  top: 14.708829365079366%;
+  z-index: 0; }
+
+.cmp57 {
+  width: 15.793750000000001%;
+  height: 12.103174603174603%;
+  left: 48.4375%;
+  top: 19.86706349206349%;
+  z-index: 0; }
+
+.cmp58 {
+  width: 18.75%;
+  height: 6.349206349206349%;
+  left: 9.6875%;
+  top: 32.367559523809526%;
+  z-index: 0; }
+
+.cmp59 {
+  width: 12.812499999999998%;
+  height: 3.1369047619047623%;
+  left: 19.6875%;
+  top: 47.95436507936508%;
+  z-index: 0; }
+
+.cmp60 {
+  width: 24.0625%;
+  height: 7.759920634920634%;
+  left: 75.35911788940427%;
+  top: 49.73419250003875%;
+  z-index: 0; }
+
+.cmp61 {
+  width: 22.1875%;
+  height: 6.418650793650794%;
+  left: -3.75%;
+  top: 53.28968253968254%;
+  z-index: 0; }
+
+.cmp62 {
+  width: 20%;
+  height: 10.642857142857142%;
+  left: -0.6234375000000014%;
+  top: 2.933791387648808%;
+  z-index: 0; }
+
+.cmp63 {
+  width: 18.4375%;
+  height: 5.109126984126984%;
+  left: 38.321875%;
+  top: 10.859126984126988%;
+  z-index: 0; }
+
+.cmp64 {
+  width: 23.4375%;
+  height: 4.783730158730159%;
+  left: 17.8125%;
+  top: -0.35317460317460336%;
+  z-index: 0; }
+
+.cmp65 {
+  width: 21.5625%;
+  height: 6.253968253968253%;
+  left: 39.88321685791014%;
+  top: 1.2202380952380907%;
+  z-index: 0; }
+
+.cmp66 {
+  width: 26.5625%;
+  height: 8.186507936507937%;
+  left: 3.0093749999999986%;
+  top: 19.420634920634917%;
+  z-index: 0; }
+
+.cmp67 {
+  width: 14.0625%;
+  height: 6.944444444444445%;
+  left: 85.94220504760742%;
+  top: 4.409294007316475%;
+  z-index: 0; }
+
+.cmp68 {
+  width: 71.875%;
+  height: 4.563492063492063%;
+  left: 6.25%;
+  top: 73.01587301587301%;
+  z-index: 0; }
+
+.cmp69 {
+  width: 63.4375%;
+  height: 4.7023809523809526%;
+  left: 19.375%;
+  top: 82.34126984126983%;
+  z-index: 0; }
+
+.cmp70 {
+  width: 82.1875%;
+  height: 2.976190476190476%;
+  left: -2.1875%;
+  top: 77.18253968253968%;
+  z-index: 0; }
+
+.cmp71 {
+  width: 82.1875%;
+  height: 2.976190476190476%;
+  left: 18.4375%;
+  top: 85.71428571428571%;
+  z-index: 0; }
+
+.cmp72 {
+  width: 13.750000000000002%;
+  height: 3.896825396825397%;
+  left: 81.59025192260742%;
+  top: 39.51388888888888%;
+  z-index: 0; }
+
+.box6 {
+  background: url("../images/bg6.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #fff; }
+
+.cmp73 {
+  width: 69.79375%;
+  height: 46.82539682539682%;
+  left: 15.625%;
+  top: 9.523809523809524%;
+  z-index: 0; }
+
+.cmp74 {
+  width: 57.1875%;
+  height: 33.87698412698413%;
+  left: 22.8125%;
+  top: 36.432539682539684%;
+  z-index: 0; }
+
+.cmp75 {
+  width: 7.187499999999999%;
+  height: 6.349206349206349%;
+  left: 57.49999999999999%;
+  top: 47.22222222222222%;
+  z-index: 0; }
+
+.cmp76 {
+  width: 5.237500000000001%;
+  height: 5.952380952380952%;
+  left: 46.5625%;
+  top: 47.817460317460316%;
+  z-index: 0; }
+
+.cmp77 {
+  width: 59.68750000000001%;
+  height: 5.448412698412699%;
+  left: 23.4375%;
+  top: 74.60317460317461%;
+  z-index: 0; }
+
+.cmp78 {
+  width: 66.875%;
+  height: 5.307539682539683%;
+  left: 19.0625%;
+  top: 82.73809523809523%;
+  z-index: 0; }
+
+.cmp79 {
+  width: 60.3125%;
+  height: 3.111111111111111%;
+  left: 23.4375%;
+  top: 78.96825396825396%;
+  z-index: 0; }
+
+.cmp80 {
+  width: 66.875%;
+  height: 3.7698412698412698%;
+  left: 18.75%;
+  top: 85.9126984126984%;
+  z-index: 0; }
+
+.box7 {
+  background: url("../images/bg7.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #fff; }
+
+.cmp81 {
+  width: 68.79375%;
+  height: 55.55555555555556%;
+  left: 15.971875000000004%;
+  top: 4.9603174603174605%;
+  z-index: 0; }
+
+.cmp82 {
+  width: 74.375%;
+  height: 74.60317460317461%;
+  left: 13.940625000000004%;
+  top: 22.61904761904762%;
+  z-index: 0; }
+
+.cmp83 {
+  width: 22.325%;
+  height: 15.674603174603174%;
+  left: 39.05312500000001%;
+  top: 8.531746031746032%;
+  z-index: 0; }
+
+.cmp84 {
+  width: 45.625%;
+  height: 6.698412698412698%;
+  left: 28.78535156250003%;
+  top: 85.96031746031746%;
+  z-index: 0; }
+
+.cmp85 {
+  width: 60.3125%;
+  height: 3.373015873015873%;
+  left: 20.660351562500026%;
+  top: 81.03968253968256%;
+  z-index: 0; }
+
+.cmp86 {
+  width: 36.875%;
+  height: 10.097222222222223%;
+  left: 33.78769531250008%;
+  top: 36.11123511904763%;
+  z-index: 0; }
+
+.cmp87 {
+  width: 44.0625%;
+  height: 12.06547619047619%;
+  left: 29.72675781250011%;
+  top: 29.4702380952381%;
+  z-index: 0; }
+
+.cmp88 {
+  width: 50.9375%;
+  height: auto;
+  left: 26.59804687500003%;
+  top: 42.90500992063493%;
+  z-index: 0;
+  position: absolute; }
+
+.cmp-inner {
+  background-color: #334960;
+  color: black;
+  border-radius: 6px;
+  border-width: 0px;
+  border-style: solid;
+  border-color: transparent;
+  font-size: 1rem;
+  opacity: 1;
+  text-align: center;
+  padding: 1rem 0; }
+  .cmp-inner .form-item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: .4rem;
+    line-height: 1.5rem; }
+    .cmp-inner .form-item .form-input {
+      width: 80%;
+      border-radius: 4px;
+      line-height: 1.9rem;
+      text-indent: .6rem;
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      margin: 0 auto;
+      color: #999;
+      font-size: .7rem;
+      box-sizing: border-box; }
+    .cmp-inner .form-item input[type=submit] {
+      overflow: hidden;
+      max-width: 80%;
+      min-width: 5rem;
+      padding: 0 .3rem;
+      word-break: break-all;
+      margin-bottom: 0;
+      color: #fff;
+      background: #217fbc;
+      border: 0;
+      display: inline-block;
+      width: 90%;
+      text-indent: .25rem;
+      line-height: 1.25rem;
+      font-size: .7rem;
+      box-sizing: border-box;
+      border-radius: .15rem; }
+
+.cmp89 {
+  width: 12.934375000000001%;
+  height: 28.373015873015873%;
+  left: 60.61562500000001%;
+  top: 24.6031746031746%;
+  z-index: 0; }
+
+/*# sourceMappingURL=app.css.map */
